@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="#000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <CheckBox
+        android:id="@+id/car_item_cb"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/car_item_iv"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"/>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/car_item_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Title"/>
+        <TextView
+            android:id="@+id/car_item_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/car_item_tv_title"
+            android:text="price"
+            android:gravity="center"
+            android:textColor="#ff0000"
+            android:layout_toLeftOf="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/linearLayout" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/car_item_tv_title"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout">
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="+"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
